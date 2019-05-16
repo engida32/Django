@@ -1,0 +1,11 @@
+
+{% if all_albums%}
+<ul>
+    {% for album in all_albums %}
+    <li><a href="/web2/{{album.id }}/ "> {{album.tittle}}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+    <h3>u dont have any album</h3>
+
+{% endif %}
