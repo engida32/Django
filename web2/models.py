@@ -18,4 +18,3 @@ class Song(models.Model):
     song_tittle=models.CharField(max_length=50)
     def __str__(self):
         return self.file_type + ' -' +self.song_tittle 
-    
